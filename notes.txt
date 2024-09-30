@@ -1,0 +1,1 @@
+    //connection stringler, private keyler, şifreler, tokenlar vb. özel bilgilerimizi kod içerisinde SAKLAMAMAMIZ gerekiyor. Bu bilgileri teknolojiye göre o teknolojinin enviroment dosyalarında saklamamız gerekiyor. Bu dosyaları da development, staging, production gibi ortamlara göre ayırmamız gerekiyor.

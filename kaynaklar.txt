@@ -1,0 +1,9 @@
+JS Style Guides
+https://www.w3schools.com/js/js_conventions.asp
+https://github.com/airbnb/javascript?tab=readme-ov-file#arrow-functions
+https://google.github.io/styleguide/jsguide.html
+
+Csharp Style
+https://google.github.io/styleguide/csharp-style.html
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names
+
