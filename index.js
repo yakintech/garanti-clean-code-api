@@ -3,9 +3,10 @@ const app = express();
 const mongoose = require('mongoose');
 const categoryRoutes = require('./routes/categoryRoutes');
 const productRoutes = require('./routes/productRoutes');
-const Product = require('./models/product');
 
 require('dotenv').config()
+
+
 
 
 app.use(express.json());
