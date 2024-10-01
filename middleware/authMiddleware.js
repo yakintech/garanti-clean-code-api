@@ -2,6 +2,21 @@
 const jsonwebtoken = require('jsonwebtoken');
 const User = require('../models/user');
 
+/**
+ * Middleware to handle authentication for incoming requests.
+ * 
+ * This middleware checks for the presence of a Bearer token in the 
+ * Authorization header of the request. If the token is valid and 
+ * corresponds to an active user, the request is allowed to proceed.
+ * 
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @param {Function} next - The next middleware function.
+ * 
+ * @returns {void}
+ * 
+ * @throws {Error} If the token is invalid or the user is not active.
+ */
 const authMiddleware = async (req, res, next) => {
 
     if (req.path === '/api/users/token') {
