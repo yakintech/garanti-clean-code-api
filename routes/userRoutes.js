@@ -5,6 +5,7 @@ const { body, validationResult } = require('express-validator');
 
 
 userRoutes.post('/token', userController.token);
+userRoutes.get('/', userController.getAll);
 userRoutes.post(
     '/token',
     [
@@ -20,6 +21,11 @@ userRoutes.post(
     },
     userController.token
 );
+
+userRoutes.post("/", [
+    body('email').isEmail().notEmpty(),
+    body('password').isString().notEmpty(),
+], userController.create);
 
 
 module.exports = userRoutes;

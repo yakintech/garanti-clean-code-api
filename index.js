@@ -7,6 +7,7 @@ const productRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
 const User = require('./models/user');
 const jsonwebtoken = require('jsonwebtoken');
+const authMiddleware = require('./middleware/authMiddleware');
 
 
 
@@ -23,29 +24,7 @@ const limiter = rateLimit({
 // Apply the rate limiting middleware to all requests.
 // app.use(limiter)
 
-//token middleware
-
-app.use(async (req, res, next) => {
-
-    if (req.path === '/api/users/token') {
-        return next();
-    }
-
-    const authHeader = req.headers['authorization'];
-    if (authHeader && authHeader.startsWith('Bearer ')) {
-        const token = authHeader.split(' ')[1];
-        try {
-            jsonwebtoken.verify(token, process.env.JWT_SECRET);
-            return next();
-
-        } catch (error) {
-            return res.status(401).json({ message: "Invalid token" });
-        }
-    }
-    return res.status(401).json({ message: "Token not found" });    
-
-});
-
+app.use(authMiddleware);
 
 
 const PORT = process.env.PORT || 8080;
