@@ -7,3 +7,12 @@ Csharp Style
 https://google.github.io/styleguide/csharp-style.html
 https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names
 
+
+OWASP YAZILIM GÜVENLİĞİ
+https://www.youtube.com/watch?v=deEiUpnsmyA&ab_channel=Yak%C4%B1nKamp%C3%BCs
+TOP TEN WEB API SECURITY LIST
+https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+JWT EBOOK
+https://assets.ctfassets.net/2ntc334xpx65/o5J4X472PQUI4ai6cAcqg/13a2611de03b2c8edbd09c3ca14ae86b/jwt-handbook-v0_14_1.pdf?mem=button&mkt_tok=ODU1LVFBSC02OTkAAAGQl-I9cBx41lsUGSnH-NTMvIaSYA055lyPk7UoL6X4UcUR4nIPOhmVZRIQTuLswYyH1YsrzlW9ARD5WU-nPmr9NA9c8LJs3nY8MwgKDkPQBNn6p7XXyw
+
+
